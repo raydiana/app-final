@@ -1,0 +1,21 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les produits */
+  }
+  
+  .product {
+    border: 1px solid rgb(23, 51, 85);
+    padding: 10px;
+    background-color: rgb(122, 138, 150);
+  }
+  
+  .product h3 {
+    margin-top: 0;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  
