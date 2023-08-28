@@ -1,0 +1,97 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b084e;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .shopping{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    display: inline-block;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .nav-links {
+      margin-top: 1rem;
+    }
+  
+    .nav-links li {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #0b084e;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  li:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown li {
+    margin-bottom: 5px;
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 5px;
+  }
+  
+  .dropdown a:hover {
+    color: #007bff;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  
+  a:hover {
+    color: #007bff;
+  }
+
+  .cloth {
+    margin-top: 12px;
+  }

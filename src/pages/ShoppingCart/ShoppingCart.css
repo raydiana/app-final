@@ -1,0 +1,33 @@
+.mainc {
+    text-align: center; 
+	background-color: #fff;
+	border-radius: 20px;
+	width: 300px;
+	height: 350px;
+	margin: 150px auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.imgc {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+  }
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

@@ -1,43 +1,35 @@
-
 import './App.css';
 
-/*function App() {
-  return (
-    <div className="App">
-      <div className="list">
-        <ProductForm />
-        <ProductList />
-      </div>
-    </div>
-
-  );
-}*/
-
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import ProductForm from './components/ProductForm';
-import ProductList from './components/ProductList';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import NavBar  from './components/Navbar';
+import Accueil from './pages/Accueil/Accueil';
+import Footer from './components/Footer';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Sell from './pages/Sell/Sell';
+import Buy from './pages/Buy/Buy';
+import Login from './pages/Login/Login';
+import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
+import Register from './pages/Register/Register';
 
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <nav className="navbar">
-        <ul className="nav-list">
-          <li className="nav-item">
-            <Link to="/vendre" className="nav-link">Vendre</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/acheter" className="nav-link">Acheter</Link>
-          </li>
-        </ul>
-      </nav>
-
+    <BrowserRouter>
+      <NavBar />
       <Routes>
-        <Route path="/vendre" element={<ProductForm />} />
-        <Route path="/acheter" element={<ProductList />} />
+        <Route exact path="/" element={<Accueil/>} />
+        <Route path="/About" element={<About/>} />
+        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/Sell" element={<Sell/>} />
+        <Route path="/Buy" element={<Buy/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Register" element={<Register/>} />
+        <Route path="/ShoppingCart" element={<ShoppingCart/>} />
       </Routes>
-    </Router>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

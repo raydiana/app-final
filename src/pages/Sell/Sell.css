@@ -1,0 +1,19 @@
+img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+  
+.product {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+
