@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Web3 from 'web3';
-import {Link, useSearchParams} from 'react-router-dom';
+//import {Link, useSearchParams} from 'react-router-dom';
 import './Sell.css';
 
 class ProductList extends Component {
