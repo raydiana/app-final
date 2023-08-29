@@ -294,7 +294,7 @@ class ProductForm extends Component {
   };
 
   render() {
-    const { productName, productPrice } = this.state;
+    //const { productName, productPrice } = this.state;
 
     return (
       <div>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+/*import React, {useState} from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import "./ShoppingCart.css"
 
@@ -44,27 +44,27 @@ const ShoppingCart = () => {
 
     const checkout = () => {
     
-    };
+    };*/
 
-  return (
-    <div>
-      <h2>Panier</h2>
-        <div class="mainc">
-            <img class="imgc" src={image}></img>
-            <h3>{productname}</h3>
-            <p>Price：{price}</p>
-            <p>Number：</p>
-            <div className="quantity">
-            <button className="btn" onClick={decreaseQuantity}>-</button>
-            <input type="number" value={quantity} min="1" readOnly />
-            <button className="btn" onClick={increaseQuantity}>+</button>
-            {/* <button onClick={() => removeFromCart(item)}>Remove</button> */}
-        </div>
-            <h4>Sum：{calculateTotal()} Ether</h4>
-            <button onClick={checkout}>Payer</button>
-        </div>
-    </div>
-  );
-};
+//  return (
+//    <div>
+//      <h2>Panier</h2>
+//        <div class="mainc">
+ //           <img class="imgc" src={image}></img>
+//            <h3>{productname}</h3>
+//            <p>Price：{price}</p>
+//            <p>Number：</p>
+//            <div className="quantity">
+//            <button className="btn" onClick={decreaseQuantity}>-</button>
+//            <input type="number" value={quantity} min="1" readOnly />
+//            <button className="btn" onClick={increaseQuantity}>+</button>
+//           {/* <button onClick={() => removeFromCart(item)}>Remove</button> */}
+//        </div>
+//            <h4>Sum：{calculateTotal()} Ether</h4>
+//            <button onClick={checkout}>Payer</button>
+//        </div>
+//    </div>
+//  );
+//};
 
-export default ShoppingCart;
+//export default ShoppingCart;
