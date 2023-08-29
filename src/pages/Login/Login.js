@@ -12,7 +12,7 @@ function Login() {
   const handleSubmit = async(event) => {
     event.preventDefault();
 
-    if (email == '' || password == '') return
+    if (email === '' || password === '') return
     logInWithEmailAndPassword(email, password).then((user) => {
       if (user){
         alert("Connexion réussie !");

@@ -11,8 +11,8 @@ function Register() {
   const handleRegister = async(event) => {
     event.preventDefault();
     if (
-        email == '' ||
-        password == ''
+        email === '' ||
+        password === ''
       )
       return
       registerWithEmailAndPassword(

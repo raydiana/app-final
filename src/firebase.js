@@ -140,7 +140,7 @@ const getProduct = async (id) => {
     )
     const snapshot = await getDocs(products)
 
-    const product = snapshot.docs.find((doc) => doc.id == id)
+    const product = snapshot.docs.find((doc) => doc.id === id)
     return {
       id: product.id,
       ...product.data(),
