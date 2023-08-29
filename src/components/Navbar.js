@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const toggleDropdown = () => {
+  /*const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
-  };
+  };*/
 
   return (
     <nav className="navbar">
