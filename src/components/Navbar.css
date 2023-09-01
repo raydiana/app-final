@@ -21,6 +21,14 @@
     padding: 12px;
     display: inline-block;
   }
+
+  .logout {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    display: inline-block;
+    cursor: pointer;
+  }
   
   .nav-links {
     display: flex;

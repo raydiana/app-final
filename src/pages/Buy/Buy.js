@@ -298,18 +298,6 @@ class ProductForm extends Component {
     //const { productName, productPrice } = this.state;
 
     return (
-    //   <div>
-    //     <h1>Ajouter un produit</h1>
-    //     <form onSubmit={this.handleSubmit}>
-    //       <label htmlFor="productName">Nom du produit:</label>
-    //       <input type="text" id="productName" required /><br />
-    //       <label htmlFor="productPrice">Prix du produit:</label>
-    //       <input type="number" id="productPrice" required /><br />
-    //       <label htmlFor="productImage">Image du produit:</label>
-    //       <input type="file" id="productImage" onChange={this.handleImageChange} required /><br />
-    //       <button type="submit">Ajouter</button>
-    //     </form>
-    //   </div>
         <div class="container1">
             <h1>Ajouter un produit</h1>
             <form id="product-form" onSubmit={this.handleSubmit}>

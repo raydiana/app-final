@@ -1,13 +1,16 @@
 //import React, { useState } from 'react';
+import { useContext, useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../MyContext';
 
 const Navbar = () => {
-  /*const [showDropdown, setShowDropdown] = useState(false);
+  const { username, isAuthenticated, setAuthentication } = useTheme();
 
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };*/
+  const handleClick = () => {
+    alert("Déconnexion réussie!")
+    setAuthentication(false)
+  }
 
   return (
     <nav className="navbar">
@@ -19,8 +22,8 @@ const Navbar = () => {
         <li class="shopping">Panier</li>
         <li><Link to="/About">A propos</Link></li>
         <li><Link to="/Contact">Contact</Link></li>
-        <li><Link to="/Login">Login</Link></li>
-        <li><Link to="/Register">Register</Link></li>
+        {isAuthenticated ? (<li class="logout" onClick={handleClick}>Logout</li>): (<li><Link to="/Register">Register</Link></li>)}
+        {isAuthenticated ? (<li class="shopping">{username}</li>): (<li><Link to="/Login">Login</Link></li>)}
       </ul>
     </nav>
   );

@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTheme } from '../../MyContext';
 import { logInWithEmailAndPassword } from '../../firebase';
 //import { setAlert } from '../../store'
 import "./Login.css"
 
 function Login() {
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate();
+  const { setUser, setAuthentication } = useTheme();
 
   const handleSubmit = async(event) => {
     event.preventDefault();
@@ -16,6 +19,8 @@ function Login() {
     logInWithEmailAndPassword(email, password).then((user) => {
       if (user){
         alert("Connexion réussie !");
+        setUser(email);
+        setAuthentication(true);
         navigate('/')
       }else {
         alert("E-mail ou mot de passe incorrect, veuillez le saisir à nouveau.")
