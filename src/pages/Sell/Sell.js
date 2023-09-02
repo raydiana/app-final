@@ -278,7 +278,7 @@ class ProductList extends Component {
 
     }
 
-  render() {
+render() {
     const { products } = this.state;
 
     return (
@@ -289,7 +289,7 @@ class ProductList extends Component {
             <div key={product.id} class="product">
                 <img src={product.imageIPFSHash} alt={product.nomProduit} />
                 <h3>{product.nomProduit}</h3>
-                <p>Prix : {product.prix} Ether</p>
+                <p>Prix : {window.web3.utils.fromWei(product.prix, 'ether')} Ether</p>
                 {!product.achete && (
                     <button onClick={() => this.handleBuyProduct(product.id, product.prix)}>Acheter</button>
                 )}
